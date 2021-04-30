@@ -4,11 +4,9 @@ pipeline{
   stages{
     stage('Build dockerfile'){
       steps{
-        docker {
-         image 'maven:3.8.1'
-         args '-v /root/.m2:/root/.m2'   
+         sh 'docker pull maven:3.8.1'
+        // args '-v /root/.m2:/root/.m2'   
         }
-      }
     }
     stage('Build'){
       steps{
