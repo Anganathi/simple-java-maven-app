@@ -1,12 +1,11 @@
 pipeline{
   agent any
-    //{ 
-  //  docker {
-    //   sh 'docker --version'
-      // image 'maven:3.8.1'
-      // args '-v /root/.m2:/root/.m2'   
-    //}
-//  }
+      { 
+    docker {
+         image 'maven:3.8.1'
+         args '-v /root/.m2:/root/.m2'   
+      }
+    }
   stages{
     stage('Build'){
       steps{
@@ -16,6 +15,7 @@ pipeline{
     stage('Test'){
       steps{
         sh 'mvn test'
+        sh 'docker --version'
       }
       post{
         always{
