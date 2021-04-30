@@ -1,6 +1,11 @@
 pipeline{
   agent any
   stages{
+    stage('Build Docker'){
+      steps {
+        sh 'docker pull maven:3.8.1
+      }
+    }  
     stage('Build'){
       steps{
         sh 'mvn -B -DskipTests clean package'
