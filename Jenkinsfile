@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('Build Docker'){
       steps {
-        sh 'docker pull maven:3.8.1
+        sh 'docker pull maven:3.8.1'
       }
     }  
     stage('Build'){
