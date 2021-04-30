@@ -21,9 +21,9 @@ pipeline{
         }
       }
     }
-    stage('Deliver'){
+    stage('Deploy'){
       steps{
-        sh 'deliver.sh'
+        echo 'Deploying stage'
       }
     }
   }
