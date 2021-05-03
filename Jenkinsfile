@@ -3,8 +3,7 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-	 def mvnHome = tool name: 'maven3.8.1', type: 'maven'
-         sh '$mvnHome/bin/mvn clean package'
+         sh '/home/anganatn/Downloads/apache-maven-3.8.1/bin/mvn clean package'
       }
     }
     stage('Test'){
