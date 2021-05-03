@@ -3,8 +3,7 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-	tool name: 'maven3.8.1'
-        type: 'maven'
+	tool name: 'maven3.8.1' type: 'maven'
         sh 'mvn clean package'
       }
     }
