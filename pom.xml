@@ -7,13 +7,13 @@
   <version>1.0-SNAPSHOT</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
-<!-- <distributionManagement>
+ <distributionManagement>
     <repository>
       <id>nexus</id>
       <name>com.mycompany.app</name>
-      <url>http://localhost:8080/nexus/</url>
+      <url>http://localhost:8080/nexus</url>
    </repository>
-  </distributionManagement> -->
+  </distributionManagement> 
   
   <dependencies>
 
@@ -74,7 +74,7 @@
    <groupId>org.apache.maven.plugins</groupId>
    <artifactId>maven-deploy-plugin</artifactId>
    <version>3.0.0-M1</version>
-  <executions>
+<!--  <executions>
       <execution>
          <id>default-deploy</id>
          <phase>deploy</phase>
@@ -82,13 +82,13 @@
             <goal>deploy</goal>
          </goals>
       </execution>
-   </executions>
+   </executions> -->
    <configuration>
       <skip>false</skip>
    </configuration>
 </plugin> 
       
-<!--<plugin>
+<plugin>
    <groupId>org.sonatype.plugins</groupId>
    <artifactId>nexus-staging-maven-plugin</artifactId>
    <version>1.5.1</version>
@@ -103,10 +103,10 @@
    </executions>
    <configuration>
       <serverId>nexus</serverId>
-      <nexusUrl>http://localhost:8080/nexus/</nexusUrl>
+      <nexusUrl>http://localhost:8080/nexus</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
-</plugin> -->
+</plugin> 
       
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
