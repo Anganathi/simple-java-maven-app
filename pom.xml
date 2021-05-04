@@ -14,6 +14,13 @@
       <version>3.0.0-M1</version>
       <type>maven-plugin</type>
     </dependency>
+     <distributionManagement>
+    <repository>
+      <id>com.mycompany.app</id>
+      <name>com.mycompany.app</name>
+      <url>localhost://home</url>
+    </repository>
+  </distributionManagement>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
