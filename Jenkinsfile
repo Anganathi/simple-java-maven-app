@@ -14,7 +14,7 @@ pipeline{
     stage('Deploy'){
       steps{
         echo 'Deploying stage'
-        sh 'mvn deploy'
+        sh 'mvn deploy -DaltDeploymentRepository=snapshot-repo::default::file:~/my-app-v1'
       }
     }
   }
