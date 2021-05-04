@@ -9,9 +9,9 @@
   <url>http://maven.apache.org</url>
   <distributionManagement>
     <repository>
-      <id>com.mycompany.app</id>
+      <id>nexus-releases</id>
       <name>com.mycompany.app</name>
-      <url>http://localhost:8080/home/</url>
+      <url>http://localhost:8081/nexus/content/repositories/releases</url>
     </repository>
   </distributionManagement>
   <dependencies>
