@@ -14,7 +14,7 @@ pipeline{
     stage('Deploy'){
       steps{
         echo 'Deploying stage'
-        sh 'mvn deploy'
+        sh 'mvn clean deploy -Dmaven.test.skip=true'
       }
     }
   }
