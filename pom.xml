@@ -12,6 +12,8 @@
       <id>com.mycompany.app</id>
       <name>com.mycompany.app</name>
       <url>http://localhost:8080/home/anganatn</url>
+      <username>anganatn</username>
+      <password>W3lc0m32021#</password>
     </repository>
   </distributionManagement>
   <dependencies>
