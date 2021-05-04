@@ -11,7 +11,7 @@
     <repository>
       <id>nexus-snapshots</id>
       <name>com.mycompany.app</name>
-      <url>http://localhost:8080/manager/text</url>
+      <url>http://10.0.2.15:8080</url>
    </repository>
   </distributionManagement>
   
