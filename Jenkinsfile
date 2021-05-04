@@ -6,6 +6,11 @@ pipeline{
          sh 'mvn clean package'
       }
     }
+    stage('Compile'){
+      steps{
+        sh 'mvn compile -o'
+      }
+    }
     stage('Test'){
       steps{
         sh 'mvn test'
