@@ -8,7 +8,7 @@ pipeline{
     }
     stage('Compile'){
       steps{
-        sh 'mvn compile -o'
+        sh 'mvn compile'
       }
     }
     stage('Test'){
@@ -19,7 +19,7 @@ pipeline{
     stage('Deploy'){
       steps{
         echo 'Deploying stage'
-        sh 'mvn clean deploy -Dmaven.test.skip=true'
+        sh 'mvn clean deploy'
       }
     }
   }
