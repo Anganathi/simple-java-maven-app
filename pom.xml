@@ -11,7 +11,7 @@
     <repository>
       <id>com.mycompany.app</id>
       <name>com.mycompany.app</name>
-      <url>/home/anganatn</url>
+      <url>http://localhost:8080/home/anganatn</url>
     </repository>
   </distributionManagement>
   <dependencies>
