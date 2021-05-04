@@ -11,7 +11,7 @@
     <repository>
       <id>nexus</id>
       <name>com.mycompany.app</name>
-      <url>http://localhost:8080/home/anganatn</url>
+      <url>http://localhost:8080/nexus/</url>
    </repository>
   </distributionManagement> -->
   
@@ -70,14 +70,14 @@
    </executions>
 </plugin> 
       
-<plugin>
+<!--<plugin>
    <groupId>org.apache.maven.plugins</groupId>
    <artifactId>maven-deploy-plugin</artifactId>
    <version>3.0.0-M1</version>
    <configuration>
       <skip>true</skip>
    </configuration>
-</plugin>
+</plugin> -->
       
 <!--<plugin>
    <groupId>org.sonatype.plugins</groupId>
@@ -94,7 +94,7 @@
    </executions>
    <configuration>
       <serverId>nexus</serverId>
-      <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+      <nexusUrl>http://localhost:8080/nexus/</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
 </plugin> -->
