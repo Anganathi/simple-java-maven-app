@@ -19,7 +19,8 @@ pipeline{
     stage('Deploy'){
       steps{
         echo '========Deploying stage========'
-        sh 'mvn deploy -DaltDeploymentRepository=com.comapny.app::default::http://localhost:8080/home/anganatn/deployment'
+      //  sh 'mvn deploy -DaltDeploymentRepository=com.comapny.app::default::http://localhost:8080/home/anganatn/deployment'
+          sh 'mvn deploy'
       }
     }
   }
