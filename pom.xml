@@ -8,10 +8,11 @@
   <name>my-app</name>
   <url>http://maven.apache.org</url>
   <distributionManagement>
-    <snapshotRepository>
+    <repository>
       <id>nexus-snapshots</id>
+      <name>com.mycompany.app</name>
       <url>http://localhost:8080</url>
-   </snapshotRepository>
+   </repository>
   </distributionManagement>
   
   <dependencies>
