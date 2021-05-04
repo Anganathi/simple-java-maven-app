@@ -15,13 +15,7 @@
   </distributionManagement>
   
   <dependencies>
-        <dependency>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-deploy-plugin</artifactId>
-      <version>3.0.0-M1</version>
-      <type>maven-plugin</type>
-    </dependency>
-    
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -74,11 +68,12 @@
       </execution>
    </executions>
 </plugin>
-      
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-deploy-plugin</artifactId>
+      <version>3.0.0-M1</version>
+      <type>maven-plugin</type>
       <plugin>
-   <groupId>org.apache.maven.plugins</groupId>
-   <artifactId>maven-deploy-plugin</artifactId>
-   <version>${maven-deploy-plugin.version}</version>
+   
    <configuration>
       <skip>true</skip>
    </configuration>
