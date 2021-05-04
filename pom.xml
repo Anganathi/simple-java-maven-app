@@ -109,13 +109,13 @@
             <goals>
               <goal>enforce</goal>
             </goals>
-          <!--  <configuration>
+            <configuration>
               <rules>
                 <requireMavenVersion>
                   <version>[3.5.4,)</version>
                 </requireMavenVersion>
               </rules>
-            </configuration> -->
+            </configuration> 
           </execution>
         </executions>
       </plugin>
