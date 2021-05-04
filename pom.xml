@@ -11,7 +11,7 @@
     <repository>
       <id>nexus-snapshots</id>
       <name>com.mycompany.app</name>
-      <url>file:///home/anganatn</url>
+      <url>file://home/anganatn</url>
    </repository>
   </distributionManagement>
   
