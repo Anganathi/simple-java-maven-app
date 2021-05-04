@@ -19,7 +19,7 @@ pipeline{
     stage('Deploy'){
       steps{
         echo '========Deploying stage========'
-        sh 'mvn deploy -DaltDeploymentRepository=snapshot-repo::default::file:~/my-app-v1'
+        sh 'mvn deploy -DaltDeploymentRepository=com.mycompny.app::default::http://localhost:8080/home/anganatn'
       }
     }
   }
