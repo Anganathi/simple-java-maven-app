@@ -11,7 +11,7 @@
     <repository>
       <id>com.mycompany.app</id>
       <name>com.mycompany.app</name>
-      <url>https://localhost:8080/nexus</url>
+      <url>http://localhost:8080/home/anganatn/nexus</url>
    </repository>
   </distributionManagement> 
   
@@ -103,7 +103,7 @@
    </executions>
    <configuration>
       <serverId>nexus</serverId>
-      <nexusUrl>http://localhost:8080/nexus</nexusUrl>
+      <nexusUrl>http://localhost:8080/home/anganatn/nexus</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
 </plugin> 
