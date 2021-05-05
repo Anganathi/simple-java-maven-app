@@ -11,7 +11,7 @@
     <repository>
       <id>com.mycompany.app</id>
       <name>com.mycompany.app</name>
-      <url>http://localhost:8080/home/anganatn/nexus</url>
+      <url>http://localhost:8080/home/anganatn/maven-deployments</url>
    </repository>
   </distributionManagement> 
   
