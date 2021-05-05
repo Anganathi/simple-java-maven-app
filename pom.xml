@@ -11,7 +11,7 @@
     <repository>
       <id>com.mycompany.app</id>
       <name>com.mycompany.app</name>
-      <url>file:///localhost:8080/nexus</url>
+      <url>https://localhost:8080/nexus</url>
    </repository>
   </distributionManagement> 
   
