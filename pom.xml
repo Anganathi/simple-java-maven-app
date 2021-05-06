@@ -39,7 +39,7 @@
         <webXml>target/web.xml</webXml>
         <webResources>
             <resource>
-                <directory>src/main/target</directory>
+                <directory>/target</directory>
                 <filtering>true</filtering>
             </resource>
         </webResources>
