@@ -38,7 +38,7 @@
         <version>3.3.1</version>
         <configuration>
           <webappDirectory>/var/lib/jenkins/workspace/My_Pipeline/target</webappDirectory>
-          <webXml>/var/lib/jenkins/workspace/My_Pipeline/target/webapp/WEB-INF/web.xml</webXml> 
+          <webXml>/var/lib/jenkins/workspace/My_Pipeline/target/WEB-INF/web.xml</webXml> 
         </configuration>
       </plugin>
 
