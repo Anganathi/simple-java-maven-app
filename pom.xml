@@ -44,7 +44,7 @@
 
         <plugin>
             <groupId>org.apache.tomcat.maven</groupId>
-            <artifactId>tomcat8-maven-plugin</artifactId>
+            <artifactId>tomcat-maven-plugin</artifactId>
             <configuration>
               <server>tomcat</server>
                 <port>8000</port>   //Configure port number
@@ -56,11 +56,9 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
         </plugin>
-      </plugins>
-    </pluginManagement>
-    <plugins>
+ <!--   
       <plugin>
-        <!-- Build an executable JAR -->
+         Build an executable JAR 
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.2.0</version>
@@ -73,7 +71,7 @@
             </manifest>
           </archive>
         </configuration>
-      </plugin>
+      </plugin> -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -95,5 +93,6 @@
         </executions>
       </plugin>
     </plugins>
+    </pluginManagement>
   </build>
 </project>
