@@ -32,33 +32,10 @@
     <pluginManagement>
       <plugins>
         
-        <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.1</version>
-    <executions>
-  <execution>
-     <goals>
-       <goal>assembly</goal>
-     </goals>
-     <phase>package</phase>
-     <configuration>
-       <descriptorRefs>
-         <descriptorRef>jar-with-dependencies</descriptorRef>
-      </descriptorRefs>
-      <archive>
-        <manifest>
-          <mainClass>com.starter.MyListner</mainClass>
-        </manifest>
-      </archive>
-                <excludes>
-                    <exclude>**/*.zip</exclude>
-                </excludes>
-     </configuration>
-     </execution>
-    </executions>
-</plugin>
-
+         <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+           <version>2.4</version>
+            </plugin>
         
          <plugin>
         <groupId>org.apache.maven.plugins</groupId>
