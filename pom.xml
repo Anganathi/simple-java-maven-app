@@ -39,7 +39,7 @@
         <webXml>target/web.xml</webXml>
         <webResources>
             <resource>
-                <directory>/target</directory>
+                <directory>/opt/tomcat/webapps/directory>
                 <filtering>true</filtering>
             </resource>
         </webResources>
