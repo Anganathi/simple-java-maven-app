@@ -45,8 +45,8 @@
         <plugin>
             <groupId>org.apache.tomcat.maven</groupId>
             <artifactId>tomcat8-maven-plugin</artifactId>
-            <version>2.2</version>
             <configuration>
+              <server>tomcat</server>
                 <port>8000</port>   //Configure port number
                 <path>http://localhost:8000/java-app</path>   //Configure application root URL
             </configuration>
