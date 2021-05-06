@@ -37,7 +37,7 @@
             <version>2.2</version>
             <configuration>
                 <port>8000</port>   //Configure port number
-                <path>/java-app</path>   //Configure application root URL
+                <path>http://localhost:8000/java-app</path>   //Configure application root URL
             </configuration>
         </plugin>
         <plugin>
