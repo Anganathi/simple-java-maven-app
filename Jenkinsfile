@@ -14,7 +14,7 @@ pipeline{
     stage('Deploy'){
       steps{
         echo '========Deploying stage========'
-        sh 'mvn deploy -DskipTests -DaltDeploymentRepository=my-app::default::http://localhost:8080/home/anganatn/maven-deployments'
+        sh 'mvn tomcat:deploy'
       //    sh 'mvn deploy'
       }
     }
