@@ -32,19 +32,14 @@
     <pluginManagement>
       <plugins>
         
-   <plugin>
-    <artifactId>maven-war-plugin</artifactId>
-    <configuration>
-        <attachClasses>true</attachClasses>
-        <webXml>target/web.xml</webXml>
-        <webResources>
-            <resource>
-                <directory>/opt/tomcat/webapps</directory>
-                <filtering>true</filtering>
-            </resource>
-        </webResources>
-    </configuration>
-   </plugin>
+         <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version>
+        <configuration>
+          <webappDirectory>/opt/tomcat/webapps</webappDirectory>
+        </configuration>
+      </plugin>
 
         <plugin>
             <groupId>org.apache.tomcat.maven</groupId>
