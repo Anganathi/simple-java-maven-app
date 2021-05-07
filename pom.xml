@@ -56,7 +56,7 @@
              <!-- <server>tomcat</server>
                 <port>8000</port>   //Configure port number
                 <path>http://localhost:8000/webapps</path>   //Configure application root URL -->
-                <url>http://localhost:8000/manager/html</url>
+                <url>http://localhost:8000/manager</url>
                 <server>tomcat</server>
 		<path>/mywebapps</path>
             </configuration>
