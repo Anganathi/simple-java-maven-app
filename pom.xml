@@ -44,7 +44,7 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>3.3.1</version>
         <configuration>
-          <webappDirectory>/var/lib/jenkins/workspace/My_Pipeline/target</webappDirectory>
+          <webappDirectory>/opt/tomcat/webapps</webappDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin> 
