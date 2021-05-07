@@ -32,7 +32,7 @@
     <pluginManagement>
       <plugins>
     
-         <plugin>
+       <!--  <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.3.1</version>
@@ -40,7 +40,7 @@
           <webappDirectory>/var/lib/jenkins/workspace/My_Pipeline/target</webappDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
-      </plugin>
+      </plugin> -->
 
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
@@ -50,8 +50,8 @@
                 <port>8000</port>   //Configure port number
                 <path>http://localhost:8000/webapps</path>   //Configure application root URL -->
                 <url>http://localhost:8000/manager</url>
-					      <server>tomcat</server>
-					      <path>/mywebapp</path>
+                <server>tomcat</server>
+		<path>/mywebapps</path>
             </configuration>
         </plugin>
         <plugin>
