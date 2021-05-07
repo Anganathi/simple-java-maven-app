@@ -63,7 +63,7 @@
                 <server>tomcat</server>
 		<username>admin</username>
 	  	<password>W3lc0m32021#</password>
-		<path>/mywebapps</path>
+		<path>/var/lib/jenkins/workspace/My_Pipeline/target</path>
 		</configuration>
         </plugin>
        
