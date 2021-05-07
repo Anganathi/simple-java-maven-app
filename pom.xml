@@ -48,7 +48,7 @@
             <configuration>
               <server>tomcat</server>
                 <port>8000</port>   //Configure port number
-                <path>http://localhost:8000/java-app</path>   //Configure application root URL
+                <path>http://localhost:8000/manager</path>   //Configure application root URL
             </configuration>
         </plugin>
         <plugin>
