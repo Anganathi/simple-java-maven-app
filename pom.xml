@@ -3,9 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>my-app</name>
+  <name>hello-world</name>
   <url>http://maven.apache.org</url>
   
 <!--  <distributionManagement>
@@ -39,7 +39,7 @@
     <pluginManagement>
       <plugins>
     
-     <!--    <plugin>
+         <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.3.1</version>
@@ -47,7 +47,7 @@
           <webappDirectory>/var/lib/jenkins/workspace/My_Pipeline/target</webappDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
-      </plugin> -->
+      </plugin> 
 	      
 	<plugin>
           <groupId>org.apache.tomcat.maven</groupId>
@@ -63,7 +63,7 @@
                 <server>tomcat</server>
 		<username>admin</username>
 	  	<password>W3lc0m32021#</password>
-		<path>/my-app</path>
+		<path>/hello-world</path>
 		</configuration>
         </plugin>
        
@@ -74,9 +74,9 @@
               <server>tomcat</server>
                 <port>8000</port>   //Configure port number
                 <path>http://localhost:8000/webapps</path>   //Configure application root URL 
-                <url>http://localhost:8000/manager/html</url>
+                <url>http://localhost:8000/manager/text</url>
                 <server>tomcat</server>
-		<username>manager</username>
+		<username>admin</username>
 	  	<password>W3lc0m32021#</password>
 		<path>/mywebapps</path>
             </configuration>
@@ -87,8 +87,8 @@
           <version>3.8.1</version>
         </plugin>
     
-      <plugin>
-    <!--     Build an executable JAR --> 
+    <!--  <plugin>
+         Build an executable JAR  
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.2.0</version>
@@ -101,7 +101,7 @@
             </manifest>
           </archive>
         </configuration>
-      </plugin> 
+      </plugin> -->
 	      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

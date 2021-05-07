@@ -14,7 +14,7 @@ pipeline{
     stage('Deploy'){
       steps{
         echo '========Deploying stage========'
-        sh 'mvn tomcat7:deploy'
+        sh 'mvn install tomcat7:deploy'
       //    sh 'mvn deploy'
       }
     }
