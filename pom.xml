@@ -14,6 +14,12 @@
         <url>http://central_nexus/server</url>
    </repository>
 </distributionManagement> -->
+<parent>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>2.3.0.RELEASE</version>
+      <relativePath/> 
+   </parent>
 
 <dependencies>
     <dependency>
@@ -29,6 +35,21 @@
       <version>2.5</version>
       <scope>provided</scope>
    </dependency>
+   
+   <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-web</artifactId>
+      </dependency>
+      <dependency>  
+         <groupId>org.springframework.boot</groupId>  
+	 <artifactId>spring-boot-starter-tomcat</artifactId>  
+	 <scope>provided</scope>  
+      </dependency>   
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-test</artifactId>
+         <scope>test</scope>
+      </dependency>
 	
 </dependencies>
   
@@ -86,6 +107,13 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
         </plugin>
+        
+         <plugins>
+         <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+         </plugin>
+      </plugins>
     
     <!--  <plugin>
          Build an executable JAR  
