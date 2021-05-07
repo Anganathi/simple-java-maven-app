@@ -104,9 +104,9 @@
      </goals>
      <phase>package</phase>
      <configuration>
-       <descriptorRefs>
+  <!--     <descriptorRefs>
          <descriptorRef>jar-with-dependencies</descriptorRef>
-      </descriptorRefs>
+      </descriptorRefs> -->
       <archive>
         <manifest>
           <mainClass>com.starter.MyListner</mainClass>
