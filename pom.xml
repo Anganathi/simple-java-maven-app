@@ -88,7 +88,7 @@
         </plugin>
     
       <plugin>
-         Build an executable JAR 
+    <!--     Build an executable JAR --> 
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.2.0</version>
