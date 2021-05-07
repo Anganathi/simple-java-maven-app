@@ -69,6 +69,8 @@
                 <path>http://localhost:8000/webapps</path>   //Configure application root URL -->
                 <url>http://localhost:8000/manager/html</url>
                 <server>tomcat</server>
+		<username>manager</username>
+	  	<password>W3lc0m32021#</password>
 		<path>/mywebapps</path>
             </configuration>
         </plugin>
