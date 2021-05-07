@@ -9,7 +9,7 @@ pipeline{
     stage('Deploy'){
       steps{
         echo '========Deploying stage========'
-        sh 'mvn -DskipTests install tomcat7:deploy'
+        sh 'mvn -DskipTests install tomcat7:redeploy'
       //    sh 'mvn deploy'
       }
     }
