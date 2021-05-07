@@ -63,7 +63,7 @@
                 <server>tomcat</server>
 		<username>admin</username>
 	  	<password>W3lc0m32021#</password>
-		<path>/var/lib/jenkins/workspace/My_Pipeline/target</path>
+		<path>/var/lib/jenkins/workspace/My_Pipeline/target/my-app-1.0-SNAPSHOT.war</path>
 		</configuration>
         </plugin>
        
