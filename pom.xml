@@ -39,7 +39,7 @@
     <pluginManagement>
       <plugins>
     
-       <!--  <plugin>
+         <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.3.1</version>
@@ -47,13 +47,12 @@
           <webappDirectory>/var/lib/jenkins/workspace/My_Pipeline/target</webappDirectory>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
-      </plugin> -->
+      </plugin> 
        
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>tomcat-maven-plugin</artifactId>
             <configuration>
-		    <failOnMissingWebXml>false</failOnMissingWebXml>
              <!-- <server>tomcat</server>
                 <port>8000</port>   //Configure port number
                 <path>http://localhost:8000/webapps</path>   //Configure application root URL -->
@@ -130,6 +129,20 @@
      </execution>
     </executions>
 </plugin> -->
+	      <plugin>
+            <artifactId>maven-clean-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+                <execution>
+                    <id>auto-clean</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>clean</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+
         
       </plugins>
     </pluginManagement>
