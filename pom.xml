@@ -50,7 +50,7 @@
       </plugin> 
        
         <plugin>
-            <groupId>org.codehaus.mojo</groupId>
+            <groupId>org.apache.tomcat.maven</groupId>
             <artifactId>tomcat-maven-plugin</artifactId>
             <configuration>
              <!-- <server>tomcat</server>
