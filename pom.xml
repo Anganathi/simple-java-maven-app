@@ -61,7 +61,7 @@
 	 <configuration>
            <url>http://localhost:8000/manager/html</url>
                 <server>tomcat</server>
-		<username>manager</username>
+		<username>admin</username>
 	  	<password>W3lc0m32021#</password>
 		<path>/mywebapps</path>
 		</configuration>
