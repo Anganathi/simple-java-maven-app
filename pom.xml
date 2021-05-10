@@ -8,12 +8,6 @@
   <name>hello-world</name>
   <url>http://maven.apache.org</url>
   
-<!--  <distributionManagement>
-   <repository>
-      <id>nexus-site</id>
-        <url>http://central_nexus/server</url>
-   </repository>
-</distributionManagement> -->
 <parent>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-parent</artifactId>
@@ -75,6 +69,7 @@
           <artifactId>tomcat6-maven-plugin</artifactId>
           <version>2.2</version>
         </plugin>
+        
         <plugin>
           <groupId>org.apache.tomcat.maven</groupId>
           <artifactId>tomcat7-maven-plugin</artifactId>
@@ -88,20 +83,6 @@
 		</configuration>
         </plugin>
        
-     <!--   <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>tomcat-maven-plugin</artifactId>
-            <configuration>
-              <server>tomcat</server>
-                <port>8000</port>   //Configure port number
-                <path>http://localhost:8000/webapps</path>   //Configure application root URL 
-                <url>http://localhost:8000/manager/text</url>
-                <server>tomcat</server>
-		<username>admin</username>
-	  	<password>W3lc0m32021#</password>
-		<path>/mywebapps</path>
-            </configuration>
-        </plugin> -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
@@ -113,22 +94,6 @@
             <artifactId>spring-boot-maven-plugin</artifactId>
          </plugin>
     
-    <!--  <plugin>
-         Build an executable JAR  
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
-        <configuration>
-          <archive>
-            <manifest>
-              <addClasspath>true</addClasspath>
-              <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>com.mycompany.app.App</mainClass>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin> -->
-	      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -150,32 +115,6 @@
         </executions>
       </plugin>
         
-      <!--  <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.1</version>
-    <executions>
-  <execution>
-     <goals>
-       <goal>assembly</goal>
-     </goals>
-     <phase>package</phase>
-     <configuration>
-       <descriptorRefs>
-         <descriptorRef>jar-with-dependencies</descriptorRef>
-      </descriptorRefs> 
-      <archive>
-        <manifest>
-          <mainClass>com.starter.MyListner</mainClass>
-        </manifest>
-      </archive>
-                <excludes>
-                    <exclude>**/*.zip</exclude>
-                </excludes>
-     </configuration>
-     </execution>
-    </executions>
-</plugin> -->
 	      <plugin>
             <artifactId>maven-clean-plugin</artifactId>
             <version>3.1.0</version>

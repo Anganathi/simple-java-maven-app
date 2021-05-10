@@ -6,11 +6,15 @@ pipeline{
          sh 'mvn -DskipTests clean install'
       }
     }
+    stage('Test'){
+       steps{
+         sh 'mvn test'
+       }
+    }
     stage('Deploy'){
       steps{
         echo '========Deploying stage========'
         sh 'mvn -DskipTests install tomcat7:redeploy'
-      //    sh 'mvn deploy'
       }
     }
   }
